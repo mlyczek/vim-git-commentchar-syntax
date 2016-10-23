@@ -15,5 +15,5 @@ function! s:DetectGitCommitEq()
     endwhile
 endfunction
 
-au BufNewFile,BufRead *.git/COMMIT_EDITMSG call s:DetectGitCommitEq()
+au BufNewFile,BufRead COMMIT_EDITMSG call s:DetectGitCommitEq()
 
