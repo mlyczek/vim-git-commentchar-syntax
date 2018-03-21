@@ -6,7 +6,7 @@
 
 function! s:DetectGitCommitEq()
     let n = 1
-    while n < 10 && n < line("$")
+    while n < 20 && n < line("$")
         if getline(n) =~ '^= Changes to be committed'
             set syntax=gitcommiteq
             return
